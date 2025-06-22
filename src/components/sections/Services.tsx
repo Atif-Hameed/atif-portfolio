@@ -179,7 +179,7 @@ export default function Services() {
             My <span className="text-gradient">Services</span>
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Here's how I can help you bring your web application ideas to life
+            Here&apos;s how I can help you bring your web application ideas to life
             using the latest technologies and best practices.
           </p>
           <div className="w-20 h-1 bg-indigo-600 mx-auto rounded-full mt-6"></div>
@@ -217,7 +217,7 @@ export default function Services() {
             </h3>
             <p className="text-gray-400 max-w-2xl mx-auto mb-8">
               I offer tailor-made solutions to match your specific requirements.
-              Let's discuss your project and create something amazing together.
+              Let&apos;s discuss your project and create something amazing together.
             </p>
             <a
               href="#contact"

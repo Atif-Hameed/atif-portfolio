@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
+// import Image from "next/image";
 
 const skills = [
   { name: "React", level: 95 },
@@ -66,12 +66,12 @@ export default function About() {
             <p className="text-gray-300 mb-6 leading-relaxed">
               I am a passionate MERN Stack Developer with a strong focus on 
               creating responsive and performant web applications. With over 5 years
-              of experience, I've worked on various projects ranging from small
+              of experience, I&apos;ve worked on various projects ranging from small
               business websites to complex enterprise applications.
             </p>
             <p className="text-gray-300 mb-8 leading-relaxed">
               My expertise lies in building full-stack applications using
-              MongoDB, Express.js, React.js, and Node.js. I'm also proficient in
+              MongoDB, Express.js, React.js, and Node.js. I&apos;m also proficient in
               Next.js for creating server-side rendered and statically generated
               React applications.
             </p>

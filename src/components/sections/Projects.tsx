@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
+// import Image from "next/image";
 
 const projectsData = [
   {
@@ -203,7 +203,7 @@ export default function Projects() {
             href="#contact"
             className="inline-flex items-center justify-center px-8 py-3 border border-indigo-500 text-indigo-400 hover:bg-indigo-600 hover:text-white rounded-lg transition-colors duration-300"
           >
-            Let's Work Together
+            Let&apos;s Work Together
             <svg
               className="ml-2 w-5 h-5"
               fill="none"

@@ -126,7 +126,7 @@ export default function Contact() {
             Get In <span className="text-gradient">Touch</span>
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Interested in working together? Fill out the form below and I'll get
+            Interested in working together? Fill out the form below and I&apos;ll get
             back to you as soon as possible.
           </p>
           <div className="w-20 h-1 bg-indigo-600 mx-auto rounded-full mt-6"></div>
