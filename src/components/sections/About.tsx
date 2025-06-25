@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 // import Image from "next/image";
 
 const skills = [
@@ -16,11 +17,11 @@ const techStack = [
   { name: "JavaScript", icon: "/images/tech/javascript.svg" },
   { name: "TypeScript", icon: "/images/tech/typescript.svg" },
   { name: "React", icon: "/images/tech/react.svg" },
-  { name: "Node.js", icon: "/images/tech/node.svg" },
+  { name: "Node.js", icon: "/images/tech/nodejs.svg" },
   { name: "MongoDB", icon: "/images/tech/mongodb.svg" },
   { name: "Express", icon: "/images/tech/express.svg" },
   { name: "Next.js", icon: "/images/tech/nextjs.svg" },
-  { name: "Tailwind CSS", icon: "/images/tech/tailwind.svg" },
+  { name: "Tailwind CSS", icon:"/images/tech/tailwindcss.svg" },
 ];
 
 export default function About() {
@@ -64,7 +65,7 @@ export default function About() {
           >
             <h3 className="text-2xl font-semibold mb-6">Who Am I?</h3>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              I am a passionate MERN Stack Developer with a strong focus on 
+              I am a passionate MERN Stack Developer with a strong focus on
               creating responsive and performant web applications. With over 5 years
               of experience, I&apos;ve worked on various projects ranging from small
               business websites to complex enterprise applications.
@@ -122,9 +123,9 @@ export default function About() {
                   className="glass p-4 rounded-lg flex flex-col items-center justify-center hover:glow transition-all duration-300"
                 >
                   <div className="relative w-12 h-12 mb-3">
-                    <div className="w-12 h-12 rounded-lg bg-gray-800 flex items-center justify-center">
+                    <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center">
                       {/* We'll add real SVG icons later */}
-                      <svg
+                      {/* <svg
                         className="w-8 h-8 text-indigo-500"
                         fill="currentColor"
                         viewBox="0 0 20 20"
@@ -135,7 +136,8 @@ export default function About() {
                           d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 0v12h8V4H6z"
                           clipRule="evenodd"
                         />
-                      </svg>
+                      </svg> */}
+                      <Image alt="" src={tech.icon} width={100} height={100} className="h-full w-full " />
                     </div>
                   </div>
                   <span className="text-sm font-medium text-gray-300">
@@ -153,7 +155,7 @@ export default function About() {
                   <h5 className="text-lg font-semibold text-white">
                     Senior MERN Stack Developer
                   </h5>
-                  <p className="text-indigo-400">2020 - Present</p>
+                  <p className="text-indigo-400">2023 - Present</p>
                   <p className="text-gray-400 mt-2">
                     Leading development of enterprise web applications, mentoring
                     junior developers, and implementing best practices.
@@ -164,7 +166,7 @@ export default function About() {
                   <h5 className="text-lg font-semibold text-white">
                     Full Stack Developer
                   </h5>
-                  <p className="text-indigo-400">2018 - 2020</p>
+                  <p className="text-indigo-400">2022 - 2023</p>
                   <p className="text-gray-400 mt-2">
                     Developed and maintained web applications using React, Node.js,
                     and MongoDB. Collaborated with design teams to implement UI/UX.

@@ -2,38 +2,39 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 // import Image from "next/image";
 
 const projectsData = [
   {
     id: 1,
-    title: "E-commerce Platform",
+    title: "Cybenty Platform",
     description:
-      "A full-featured e-commerce platform with product catalog, shopping cart, payment integration, and admin dashboard.",
-    image: "/images/projects/ecommerce.jpg",
-    tags: ["React", "Node.js", "MongoDB", "Express"],
-    demoUrl: "#",
-    codeUrl: "#",
+      "Cybenty is a cybersecurity awareness platform that trains users to detect and prevent online threats. It offers interactive courses, phishing simulations, and tools to help users stay safe online.",
+    image: "/images/projects/cyber.png",
+    tags: ["Nextjs", "Node.js", "MongoDB", "Express"],
+    demoUrl: "https://cyber-security-frontend-zysoftec.vercel.app",
+    codeUrl: "https://github.com/Atif-Hameed/cybenty",
   },
   {
     id: 2,
-    title: "Task Management App",
+    title: "Agent Listing Services",
     description:
-      "A collaborative task management application with real-time updates, team workspaces, and progress tracking.",
-    image: "/images/projects/task-app.jpg",
-    tags: ["Next.js", "TypeScript", "MongoDB", "Socket.io"],
-    demoUrl: "#",
-    codeUrl: "#",
+      "ALS is a real estate platform that helps professionals showcase their value, attract clients, and grow their business. It boosts visibility both locally and globally through modern listing and marketing tools.",
+    image: "/images/projects/als.png",
+    tags: ["Next.js", "TypeScript","Javasript", "MongoDB", "Socket.io"],
+    demoUrl: "https://als-frontend-zysoftec.vercel.app",
+    codeUrl: "https://github.com/Atif-Hameed/ALS-Panel",
   },
   {
     id: 3,
-    title: "Social Media Dashboard",
+    title: "Social Media Platform",
     description:
-      "A comprehensive social media dashboard for analytics, content scheduling, and performance tracking.",
-    image: "/images/projects/social-dash.jpg",
-    tags: ["React", "Redux", "Node.js", "Chart.js"],
-    demoUrl: "#",
-    codeUrl: "#",
+      "A social media platform where users can post content, like, comment, and share posts. Built to foster engagement and community interaction in a familiar, user-friendly environment.",
+    image: "/images/projects/social.png",
+    tags: ["Nextjs", "Redux", "Node.js", "Mongodb"],
+    demoUrl: "https://social-media-frontend-zysoftec.vercel.app",
+    codeUrl: "https://github.com/Atif-Hameed/social-media",
   },
   {
     id: 4,
@@ -105,7 +106,7 @@ export default function Projects() {
                 <div className="absolute inset-0 bg-indigo-900/20 z-10"></div>
                 <div className="w-full h-full bg-gray-800 flex items-center justify-center">
                   {/* Placeholder for project image */}
-                  <svg
+                  {/* <svg
                     className="w-16 h-16 text-indigo-500 group-hover:scale-105 transition-transform duration-500"
                     fill="currentColor"
                     viewBox="0 0 20 20"
@@ -116,7 +117,8 @@ export default function Projects() {
                       d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z"
                       clipRule="evenodd"
                     ></path>
-                  </svg>
+                  </svg> */}
+                  <Image alt="" src={project.image} width={1000} height={1000} className="w-full object-cover h-full" />
                 </div>
               </div>
               <div className="p-6">
