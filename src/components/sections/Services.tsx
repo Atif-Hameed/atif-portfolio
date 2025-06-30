@@ -166,7 +166,7 @@ export default function Services() {
   };
 
   return (
-    <section id="services" className="py-24 bg-gray-900 clip-path-slant">
+    <section id="services" className="sm:py-32 py-20 bg-gray-900 sm:clip-path-slant">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -221,7 +221,7 @@ export default function Services() {
             </p>
             <a
               href="#contact"
-              className="inline-flex items-center justify-center px-8 py-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg transition-colors duration-300 glow"
+              className="inline-flex items-center cursor-pointer z-50 relative justify-center px-8 py-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg transition-colors duration-300 glow"
             >
               Contact Me
               <svg

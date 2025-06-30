@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "DevSphere | Software Engineering Portfolio",
+  title: "Atif Hameed | Software Engineering Portfolio",
   description: "Professional portfolio showcasing skills and projects as a Software Engineer",
   icons: {
     icon: '/favicon.ico',

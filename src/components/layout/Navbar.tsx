@@ -46,7 +46,7 @@ export default function Navbar() {
               transition={{ duration: 0.5 }}
               className="text-xl md:text-2xl font-bold text-gradient"
             >
-              <span className="text-gradient">Dev</span><span className="text-white">Sphere</span>
+              <span className="text-gradient">Atif </span><span className="text-white">Hameed</span>
             </motion.div>
           </Link>
 

@@ -67,13 +67,13 @@ export default function Hero() {
             >
               <div className="flex gap-2 items-center">
                 <div className="w-10 h-10 rounded-full bg-green-400 flex items-center justify-center text-black font-bold">
-                  5+
+                  2+
                 </div>
                 <span className="text-gray-300">Years Experience</span>
               </div>
               <div className="flex gap-2 items-center">
                 <div className="w-10 h-10 rounded-full bg-blue-400 flex items-center justify-center text-black font-bold">
-                  50+
+                  20+
                 </div>
                 <span className="text-gray-300">Projects Completed</span>
               </div>

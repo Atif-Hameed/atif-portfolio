@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const socialLinks = [
   {
     name: "GitHub",
-    href: "https://github.com/yourusername",
+    href: "https://github.com/Atif-Hameed",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -22,7 +22,7 @@ const socialLinks = [
   },
   {
     name: "LinkedIn",
-    href: "https://linkedin.com/in/yourusername",
+    href: "https://www.linkedin.com/in/im-atifhameed",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +38,7 @@ const socialLinks = [
   },
   {
     name: "Twitter",
-    href: "https://twitter.com/yourusername",
+    href: "https://x.com/im_atifhameed",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -58,11 +58,11 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gray-900 py-12">
+    <footer className="bg-gray-900 pt-12 pb-7">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <h3 className="text-xl font-bold text-gradient mb-4">DevSphere</h3>
+            <h3 className="text-xl font-bold text-gradient mb-4">Atif Hameed</h3>
             <p className="text-gray-400 max-w-xs">
               Building innovative software solutions with modern technologies
             </p>
@@ -119,7 +119,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; {currentYear} DevSphere. All rights reserved.</p>
+          <p>&copy; {currentYear} Portfolio. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -5,11 +5,13 @@ import Image from "next/image";
 // import Image from "next/image";
 
 const skills = [
+  { name: "Next.js", level: 95 },
   { name: "React", level: 95 },
   { name: "TypeScript", level: 90 },
-  { name: "Node.js", level: 85 },
+  { name: "Javascript", level: 90 },
+  { name: "Node.js", level: 80 },
+  { name: "Strapi CRM", level: 90 },
   { name: "MongoDB", level: 80 },
-  { name: "Next.js", level: 90 },
   { name: "Express", level: 85 },
 ];
 
@@ -21,7 +23,7 @@ const techStack = [
   { name: "MongoDB", icon: "/images/tech/mongodb.svg" },
   { name: "Express", icon: "/images/tech/express.svg" },
   { name: "Next.js", icon: "/images/tech/nextjs.svg" },
-  { name: "Tailwind CSS", icon:"/images/tech/tailwindcss.svg" },
+  { name: "Tailwind CSS", icon: "/images/tech/tailwindcss.svg" },
 ];
 
 export default function About() {
@@ -65,7 +67,7 @@ export default function About() {
           >
             <h3 className="text-2xl font-semibold mb-6">Who Am I?</h3>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              I am a passionate MERN Stack Developer with a strong focus on
+              I&apos;m Atif Hameed, a passionate MERN Stack Developer with a strong focus on
               creating responsive and performant web applications. With over 5 years
               of experience, I&apos;ve worked on various projects ranging from small
               business websites to complex enterprise applications.
@@ -76,6 +78,7 @@ export default function About() {
               Next.js for creating server-side rendered and statically generated
               React applications.
             </p>
+
 
             <div className="mb-8">
               <h4 className="text-xl font-medium mb-4">My Skills</h4>

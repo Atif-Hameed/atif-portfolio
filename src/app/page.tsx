@@ -9,7 +9,7 @@ import ScrollToTop from "@/components/ui/ScrollToTop";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black">
+    <main className="min-h-screen bg-black overflow-hidden">
       <Navbar />
       <Hero />
       <About />

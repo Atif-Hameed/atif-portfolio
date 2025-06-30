@@ -12,6 +12,7 @@ export default function Contact() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formSubmitted, setFormSubmitted] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -21,23 +22,33 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setFormSubmitted(true);
-      setFormData({
-        name: "",
-        email: "",
-        subject: "",
-        message: "",
+    setError(null);
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
       });
-      
-      // Reset success message after 5 seconds
-      setTimeout(() => {
-        setFormSubmitted(false);
-      }, 5000);
-    }, 1500);
+
+      const result = await res.json();
+
+      if (res.ok && result.isSuccess) {
+        setFormSubmitted(true);
+        setFormData({ name: "", email: "", subject: "", message: "" });
+
+        setTimeout(() => setFormSubmitted(false), 5000);
+      } else {
+        setError(result.message || "Something went wrong.");
+      }
+    } catch (err) {
+      console.error("Submission error:", err);
+      setError("Failed to send message.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const contactInfo = [
@@ -59,8 +70,8 @@ export default function Contact() {
         </svg>
       ),
       title: "Email",
-      value: "contact@merndev.com",
-      link: "mailto:contact@merndev.com",
+      value: "atifhameed11312@gmail.com",
+      link: "mailto:atifhameed11312@gmail.com",
     },
     {
       icon: (
@@ -80,8 +91,8 @@ export default function Contact() {
         </svg>
       ),
       title: "Phone",
-      value: "+1 (555) 123-4567",
-      link: "tel:+15551234567",
+      value: "+92 313 0659055",
+      link: "tel:+923130659055",
     },
     {
       icon: (
@@ -107,13 +118,13 @@ export default function Contact() {
         </svg>
       ),
       title: "Location",
-      value: "San Francisco, CA",
+      value: "E-Block Johar Town Lahore",
       link: "",
     },
   ];
 
   return (
-    <section id="contact" className="py-24 bg-black">
+    <section id="contact" className="py-24 bg-black ">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -243,9 +254,8 @@ export default function Contact() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className={`inline-flex items-center justify-center px-8 py-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg transition-colors duration-300 ${
-                      isSubmitting ? "opacity-75 cursor-not-allowed" : "glow"
-                    }`}
+                    className={`inline-flex items-center cursor-pointer justify-center px-8 py-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg transition-colors duration-300 ${isSubmitting ? "opacity-75 cursor-not-allowed" : "glow"
+                      }`}
                   >
                     {isSubmitting ? (
                       <>
@@ -291,6 +301,7 @@ export default function Contact() {
                       </>
                     )}
                   </button>
+                  {error && <p className="text-red-500">{error}</p>}
                 </div>
               </form>
             )}
@@ -328,14 +339,14 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="glass rounded-xl p-6 md:p-10 h-[300px]">
+            {/* <div className="glass rounded-xl p-6 md:p-10 h-[300px]">
               <h3 className="text-xl font-bold mb-6">Office Location</h3>
               <div className="bg-gray-800 h-full w-full rounded-lg flex items-center justify-center">
                 <p className="text-gray-400">
                   [Google Map will be embedded here]
                 </p>
               </div>
-            </div>
+            </div> */}
           </motion.div>
         </div>
       </div>

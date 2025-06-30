@@ -8,6 +8,36 @@ import Image from "next/image";
 const projectsData = [
   {
     id: 1,
+    title: "Unsigned Software",
+    description:
+      "A custom clothing platform where users can personalize garments, select fabrics, and configure design options with ease.",
+    image: "/images/projects/unsign.png",
+    tags: ["Nextjs", "Firebase", "Typescript", "Redux"],
+    demoUrl: "https://unsigned-nu.vercel.app",
+    codeUrl: "https://github.com/Atif-Hameed/unsigned-frontend",
+  },
+  {
+    id: 2,
+    title: "Agent Listing Services",
+    description:
+      "ALS is a real estate platform that helps professionals showcase their value, attract clients, and grow their business. It boosts visibility both locally and globally through modern listing and marketing tools.",
+    image: "/images/projects/als.png",
+    tags: ["Next.js", "TypeScript", "MongoDB", "Socket.io"],
+    demoUrl: "https://als-frontend-zysoftec.vercel.app",
+    codeUrl: "https://github.com/Atif-Hameed/ALS-Panel",
+  },
+  {
+    id: 3,
+    title: "Denka Website",
+    description:
+      "An energy innovation company empowering sustainable living through advanced power-saving technologies that enhance efficiency, reduce consumption, and extend system lifespans—backed by science and built for the future.",
+    image: "/images/projects/denka.png",
+    tags: ["Nextjs", "Redux", "Javascript", "Framer Motion"],
+    demoUrl: "https://denka-website-omega.vercel.app",
+    codeUrl: "https://github.com/Atif-Hameed/Denka-Website",
+  },
+  {
+    id: 4,
     title: "Cybenty Platform",
     description:
       "Cybenty is a cybersecurity awareness platform that trains users to detect and prevent online threats. It offers interactive courses, phishing simulations, and tools to help users stay safe online.",
@@ -17,17 +47,17 @@ const projectsData = [
     codeUrl: "https://github.com/Atif-Hameed/cybenty",
   },
   {
-    id: 2,
-    title: "Agent Listing Services",
+    id: 5,
+    title: "GTIS Partners",
     description:
-      "ALS is a real estate platform that helps professionals showcase their value, attract clients, and grow their business. It boosts visibility both locally and globally through modern listing and marketing tools.",
-    image: "/images/projects/als.png",
-    tags: ["Next.js", "TypeScript","Javasript", "MongoDB", "Socket.io"],
-    demoUrl: "https://als-frontend-zysoftec.vercel.app",
-    codeUrl: "https://github.com/Atif-Hameed/ALS-Panel",
+      "A global real estate investment firm transforming communities across the Americas and Europe through strategic capital deployment, development expertise, and visionary partnerships.",
+    image: "/images/projects/gtis.png",
+    tags: ["Bootstrap", "Html", "Css"],
+    demoUrl: "https://gtis-partners-website.vercel.app",
+    codeUrl: "https://github.com/Atif-Hameed/GTIS-Partners_website",
   },
   {
-    id: 3,
+    id: 6,
     title: "Social Media Platform",
     description:
       "A social media platform where users can post content, like, comment, and share posts. Built to foster engagement and community interaction in a familiar, user-friendly environment.",
@@ -37,15 +67,26 @@ const projectsData = [
     codeUrl: "https://github.com/Atif-Hameed/social-media",
   },
   {
-    id: 4,
-    title: "Health & Fitness Tracker",
+    id: 7,
+    title: "Vispik App",
     description:
-      "A personal health and fitness tracking application with goal setting, progress visualization, and workout planning.",
-    image: "/images/projects/fitness-app.jpg",
-    tags: ["React Native", "Firebase", "Node.js", "Express"],
-    demoUrl: "#",
-    codeUrl: "#",
+      "A comprehensive volatility data platform offering real-time and historical VIX, S&P 500, and futures data—ideal for traders and investors seeking actionable market insights.",
+    image: "/images/projects/vispik.png",
+    tags: ["Nextjs", "Chart js", "Nodemailer", "Typescript"],
+    demoUrl: "https://vispik-t1kh.vercel.app",
+    codeUrl: "https://github.com/Atif-Hameed/vispik",
   },
+  {
+    id: 8,
+    title: "BrillePro",
+    description:
+      "A trusted window cleaning service delivering spotless results for residential and commercial properties—using eco-friendly products, modern techniques, and a satisfaction guarantee.",
+    image: "/images/projects/brilpro.png",
+    tags: ["Nextjs", "Redux", "Javascript", "i18next"],
+    demoUrl: "https://brillo-pro.vercel.app/",
+    codeUrl: "https://github.com/Atif-Hameed/BrilloPro",
+  }
+
 ];
 
 export default function Projects() {
@@ -105,19 +146,7 @@ export default function Projects() {
               <div className="h-64 relative overflow-hidden">
                 <div className="absolute inset-0 bg-indigo-900/20 z-10"></div>
                 <div className="w-full h-full bg-gray-800 flex items-center justify-center">
-                  {/* Placeholder for project image */}
-                  {/* <svg
-                    className="w-16 h-16 text-indigo-500 group-hover:scale-105 transition-transform duration-500"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z"
-                      clipRule="evenodd"
-                    ></path>
-                  </svg> */}
+
                   <Image alt="" src={project.image} width={1000} height={1000} className="w-full object-cover h-full" />
                 </div>
               </div>
